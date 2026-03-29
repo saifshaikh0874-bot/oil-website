@@ -14,41 +14,97 @@
 
 <body>
 
-<!-- NAV -->
-<nav>
-  <a href="#" class="nav-logo">PureNature</a>
+<!-- ================= NAVBAR ================= -->
+<nav class="navbar">
+  <div class="logo">PureNature</div>
   <ul class="nav-links">
     <li><a href="#about">About</a></li>
     <li><a href="#products">Products</a></li>
     <li><a href="#why">Why Us</a></li>
-    <li><a href="#blog">Blog</a></li>
     <li><a href="#contact">Contact</a></li>
   </ul>
-  <a href="#contact" class="nav-cta">Get Quote</a>
 </nav>
 
-<!-- HERO -->
+<!-- ================= HERO (INSANE LEVEL) ================= -->
 <section class="hero">
+
+  <!-- VIDEO -->
+  <video autoplay muted loop playsinline id="heroVideo" class="hero-video">
+    <source src="videoforest.mp4" type="video/mp4">
+  </video>
+
+  <!-- LIGHT GLOW -->
+  <div class="light-glow"></div>
+
+  <!-- PARTICLES -->
+  <div class="particles"></div>
+
+  <!-- OVERLAY -->
+  <div class="hero-overlay"></div>
+
+  <!-- CONTENT -->
   <div class="hero-content">
-    <h1>Pure Essential Oils</h1>
-    <p>Natural • Organic • Premium</p>
-    <a href="#products" class="btn-primary">Explore Products</a>
+    <h1 class="fade-text">Pure & Natural <span>Essential Oils</span></h1>
+    <p class="fade-text delay">Harvested from Nature, Crafted for You</p>
+
+    <div class="hero-buttons fade-text delay2">
+      <a href="#products" class="btn-primary">Explore Products</a>
+      <a href="#contact" class="btn-outline">Get Quote</a>
+    </div>
   </div>
+
 </section>
 
-<!-- PRODUCTS -->
+<!-- ================= STATS ================= -->
+<section class="stats">
+  <div><h2>200+</h2><p>Products</p></div>
+  <div><h2>50+</h2><p>Countries</p></div>
+  <div><h2>10+</h2><p>Years Experience</p></div>
+  <div><h2>5000+</h2><p>Happy Clients</p></div>
+</section>
+
+<!-- ================= ABOUT ================= -->
+<section id="about" class="about">
+  <h2>About Our Company</h2>
+  <p>
+    We are a leading manufacturer of premium essential oils, delivering purity and quality worldwide.
+    Our oils are sourced directly from nature and processed with advanced techniques.
+  </p>
+</section>
+
+<!-- ================= PRODUCTS ================= -->
 <section id="products" class="products">
-  <h2>Our Products</h2>
-  <div class="products-grid">
-    <div class="product-card">Essential Oil</div>
-    <div class="product-card">Carrier Oil</div>
-    <div class="product-card">Spice Oil</div>
+  <h2>Our Product Categories</h2>
+
+  <div class="product-grid">
+    <div class="card">Essential Oils</div>
+    <div class="card">Carrier Oils</div>
+    <div class="card">Spice Oils</div>
+    <div class="card">Oleoresins</div>
   </div>
 </section>
 
-<!-- FOOTER -->
+<!-- ================= WHY US ================= -->
+<section id="why" class="why">
+  <h2>Why Choose Us</h2>
+
+  <div class="why-grid">
+    <div>100% Natural</div>
+    <div>No Chemicals</div>
+    <div>Certified Quality</div>
+    <div>Global Export</div>
+  </div>
+</section>
+
+<!-- ================= CONTACT ================= -->
+<section id="contact" class="contact">
+  <h2>Contact Us</h2>
+  <p>Email: info@purenature.com</p>
+</section>
+
+<!-- ================= FOOTER ================= -->
 <footer>
-  <p>© 2026 PureNature Oils</p>
+  <p>© 2026 PureNature Oils. All rights reserved.</p>
 </footer>
 
 <!-- JS -->
