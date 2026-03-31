@@ -210,7 +210,7 @@ p  { line-height: 1.75; color: var(--text-mid); font-weight: 300; }
   position: absolute;
   inset: 0;
   background: linear-gradient(135deg, #0f2206 0%, #1a3a0a 50%, #0d1a07 100%);
-  z-index: 0;
+  z-index: -1;
 }
 .hero-overlay {
   position: absolute;
@@ -848,10 +848,10 @@ p  { line-height: 1.75; color: var(--text-mid); font-weight: 300; }
 
 <!-- ========== HERO ========== -->
 <section class="hero">
+  <div class="hero-bg-fallback"></div>
   <video autoplay muted loop playsinline class="hero-video">
     <source src="videoforest.mp4" type="video/mp4">
   </video>
-  <div class="hero-bg-fallback"></div>
   <div class="hero-overlay"></div>
   <div class="light-glow"></div>
   <div class="particles"></div>
@@ -999,7 +999,7 @@ p  { line-height: 1.75; color: var(--text-mid); font-weight: 300; }
       <h2>Request a <em>Sample or Quote</em></h2>
       <p>Our team will get back to you within 24 hours.</p>
       <ul class="contact-info">
-        <li><span>📧</span> info@purenature.com</li>
+        <li><span>📧</span> <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="462f28202906363334232827323334236825292b">[email&#160;protected]</a></li>
         <li><span>📞</span> +91 98765 43210</li>
         <li><span>📍</span> Kannauj, Uttar Pradesh, India</li>
       </ul>
@@ -1038,7 +1038,7 @@ p  { line-height: 1.75; color: var(--text-mid); font-weight: 300; }
   </div>
 </footer>
 
-<script>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
 /* =========================================
    PURENATURE OILS — main.js
    ========================================= */
@@ -1156,13 +1156,4 @@ if (cards.length && dotsWrap) {
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   anchor.addEventListener('click', e => {
     const target = document.querySelector(anchor.getAttribute('href'));
-    if (target) {
-      e.preventDefault();
-      const offset = document.getElementById('navbar')?.offsetHeight || 72;
-      window.scrollTo({ top: target.offsetTop - offset, behavior: 'smooth' });
-    }
-  });
-});
-</script>
-</body>
-</html>
+    if (tar
