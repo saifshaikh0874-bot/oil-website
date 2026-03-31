@@ -1,115 +1,329 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>PureNature Oils</title>
-
-  <!-- Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond&family=DM+Sans&display=swap" rel="stylesheet">
-
-  <!-- CSS -->
-  <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PureNature Oils – Harvested from Nature, Crafted for You</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
 </head>
-
 <body>
 
-<!-- ================= NAVBAR ================= -->
-<nav class="navbar">
-  <div class="logo">PureNature</div>
-  <ul class="nav-links">
-    <li><a href="#about">About</a></li>
-    <li><a href="#products">Products</a></li>
-    <li><a href="#why">Why Us</a></li>
-    <li><a href="#contact">Contact</a></li>
-  </ul>
-</nav>
+<!-- ========== NAVBAR ========== -->
+<header class="navbar" id="navbar">
+  <div class="nav-inner">
+    <button class="hamburger" id="hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+    <a href="#" class="logo">PureNature</a>
+    <nav class="nav-menu" id="navMenu">
+      <ul>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#products">Essential Oil</a></li>
+        <li><a href="#products">Carrier Oil</a></li>
+        <li><a href="#products">Spice Oil</a></li>
+        <li><a href="#products">Oleoresin</a></li>
+        <li><a href="#contact">Contact Us</a></li>
+      </ul>
+    </nav>
+    <a href="#contact" class="nav-cta">Get Quote</a>
+  </div>
+</header>
 
-<!-- ================= HERO (INSANE LEVEL) ================= -->
+<!-- ========== HERO ========== -->
 <section class="hero">
-
-  <!-- VIDEO -->
-  <video autoplay muted loop playsinline id="heroVideo" class="hero-video">
+  <video autoplay muted loop playsinline class="hero-video">
     <source src="videoforest.mp4" type="video/mp4">
   </video>
-
-  <!-- LIGHT GLOW -->
+  <!-- fallback gradient bg if video doesn't load -->
+  <div class="hero-bg-fallback"></div>
+  <div class="hero-overlay"></div>
   <div class="light-glow"></div>
-
-  <!-- PARTICLES -->
   <div class="particles"></div>
 
-  <!-- OVERLAY -->
-  <div class="hero-overlay"></div>
-
-  <!-- CONTENT -->
   <div class="hero-content">
-    <h1 class="fade-text">Pure & Natural <span>Essential Oils</span></h1>
-    <p class="fade-text delay">Harvested from Nature, Crafted for You</p>
-
-    <div class="hero-buttons fade-text delay2">
-      <a href="#products" class="btn-primary">Explore Products</a>
-      <a href="#contact" class="btn-outline">Get Quote</a>
+    <p class="hero-eyebrow fade-up">ISO 9001:2015 &amp; WHO-GMP Certified</p>
+    <h1 class="hero-title fade-up d1">
+      Pure &amp; Natural<br><em>Essential Oils</em>
+    </h1>
+    <p class="hero-sub fade-up d2">Harvested from Nature, Crafted for You!</p>
+    <div class="hero-btns fade-up d3">
+      <a href="#products" class="btn btn-white">Explore Products</a>
+      <a href="#contact" class="btn btn-ghost">Get a Quote</a>
     </div>
   </div>
 
+  <div class="hero-scroll">
+    <span></span>
+    <p>Scroll</p>
+  </div>
 </section>
 
-<!-- ================= STATS ================= -->
+<!-- ========== STATS STRIP ========== -->
 <section class="stats">
-  <div><h2>200+</h2><p>Products</p></div>
-  <div><h2>50+</h2><p>Countries</p></div>
-  <div><h2>10+</h2><p>Years Experience</p></div>
-  <div><h2>5000+</h2><p>Happy Clients</p></div>
+  <div class="stats-inner">
+    <div class="stat-item">
+      <h3 data-count="200">0</h3><span>+</span>
+      <p>Products</p>
+    </div>
+    <div class="stat-divider"></div>
+    <div class="stat-item">
+      <h3 data-count="50">0</h3><span>+</span>
+      <p>Countries</p>
+    </div>
+    <div class="stat-divider"></div>
+    <div class="stat-item">
+      <h3 data-count="10">0</h3><span>+</span>
+      <p>Years Experience</p>
+    </div>
+    <div class="stat-divider"></div>
+    <div class="stat-item">
+      <h3 data-count="5000">0</h3><span>+</span>
+      <p>Happy Clients</p>
+    </div>
+  </div>
 </section>
 
-<!-- ================= ABOUT ================= -->
-<section id="about" class="about">
-  <h2>About Our Company</h2>
-  <p>
-    We are a leading manufacturer of premium essential oils, delivering purity and quality worldwide.
-    Our oils are sourced directly from nature and processed with advanced techniques.
-  </p>
+<!-- ========== ABOUT ========== -->
+<section id="about" class="about reveal-section">
+  <div class="about-inner">
+    <div class="about-img-wrap">
+      <div class="about-img-box img-box-1"></div>
+      <div class="about-img-box img-box-2"></div>
+      <div class="about-badge">
+        <span>10+</span>
+        <small>Years of<br>Excellence</small>
+      </div>
+    </div>
+    <div class="about-text">
+      <p class="section-label">A Brand You Can Trust</p>
+      <h2>Leading Essential Oil <em>Manufacturer</em> in India</h2>
+      <p>PureNature is an ISO 9001:2015 and WHO-GMP certified organisation and one of the leaders in the manufacturing and production of natural essential oils and carrier oils. We have been in existence for more than a decade, making a remarkable mark in the industry.</p>
+      <p>What distinguishes us from other oil manufacturing units is the care and caution with which our oils are composed in our state-of-the-art machinery — ensuring purity from farm to bottle.</p>
+      <a href="#products" class="btn btn-green">Explore Products</a>
+    </div>
+  </div>
 </section>
 
-<!-- ================= PRODUCTS ================= -->
-<section id="products" class="products">
-  <h2>Our Product Categories</h2>
-
+<!-- ========== PRODUCTS ========== -->
+<section id="products" class="products reveal-section">
+  <div class="section-head">
+    <p class="section-label">What We Offer</p>
+    <h2>The Product Range We Offer</h2>
+  </div>
   <div class="product-grid">
-    <div class="card">Essential Oils</div>
-    <div class="card">Carrier Oils</div>
-    <div class="card">Spice Oils</div>
-    <div class="card">Oleoresins</div>
+    <div class="product-card">
+      <div class="product-img" style="background-image:url('https://images.unsplash.com/photo-1608571423902-eed4a5ad8108?w=600&auto=format&fit=crop')"></div>
+      <div class="product-info">
+        <h3>Essential Oils</h3>
+        <p>Steam-distilled, cold-pressed oils sourced from the finest botanical origins worldwide.</p>
+        <a href="#contact" class="card-link">Enquire Now →</a>
+      </div>
+    </div>
+    <div class="product-card">
+      <div class="product-img" style="background-image:url('https://images.unsplash.com/photo-1515377905703-c4788e51af15?w=600&auto=format&fit=crop')"></div>
+      <div class="product-info">
+        <h3>Carrier Oils</h3>
+        <p>Cold-pressed from seeds, nuts, and kernels — pure base oils for blending and skincare.</p>
+        <a href="#contact" class="card-link">Enquire Now →</a>
+      </div>
+    </div>
+    <div class="product-card">
+      <div class="product-img" style="background-image:url('https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=600&auto=format&fit=crop')"></div>
+      <div class="product-info">
+        <h3>Spice Oils</h3>
+        <p>Vibrant spice-derived oils capturing the true aroma and therapeutic value of nature's spices.</p>
+        <a href="#contact" class="card-link">Enquire Now →</a>
+      </div>
+    </div>
+    <div class="product-card">
+      <div class="product-img" style="background-image:url('https://images.unsplash.com/photo-1587997992261-cf99a28af3c8?w=600&auto=format&fit=crop')"></div>
+      <div class="product-info">
+        <h3>Oleoresins</h3>
+        <p>Concentrated natural extracts preserving the full spectrum of plant compounds and flavours.</p>
+        <a href="#contact" class="card-link">Enquire Now →</a>
+      </div>
+    </div>
   </div>
 </section>
 
-<!-- ================= WHY US ================= -->
-<section id="why" class="why">
-  <h2>Why Choose Us</h2>
-
-  <div class="why-grid">
-    <div>100% Natural</div>
-    <div>No Chemicals</div>
-    <div>Certified Quality</div>
-    <div>Global Export</div>
+<!-- ========== WHY US ========== -->
+<section id="why" class="why reveal-section">
+  <div class="why-inner">
+    <div class="why-text">
+      <p class="section-label">Our Promise</p>
+      <h2>Why Choose <em>PureNature?</em></h2>
+      <p>We believe that what goes into your body matters. Every drop of our oil meets rigorous quality standards, is ethically sourced, and is free from harmful compounds.</p>
+      <a href="#contact" class="btn btn-green">Contact Us</a>
+    </div>
+    <div class="why-grid">
+      <div class="why-item">
+        <div class="why-icon">🌿</div>
+        <h4>100% Chemical Free</h4>
+        <p>No synthetic or artificial compounds — ever.</p>
+      </div>
+      <div class="why-item">
+        <div class="why-icon">🌱</div>
+        <h4>Organic Plant Based</h4>
+        <p>Manufactured to WHO quality standards.</p>
+      </div>
+      <div class="why-item">
+        <div class="why-icon">🔬</div>
+        <h4>Research Backed</h4>
+        <p>Fragrances derived only from natural sources.</p>
+      </div>
+      <div class="why-item">
+        <div class="why-icon">🐾</div>
+        <h4>Cruelty Free</h4>
+        <p>Zero preservatives in our manufacturing process.</p>
+      </div>
+      <div class="why-item">
+        <div class="why-icon">✅</div>
+        <h4>SLS &amp; Paraben Free</h4>
+        <p>Safe for skin, body, and the environment.</p>
+      </div>
+      <div class="why-item">
+        <div class="why-icon">🌍</div>
+        <h4>Global Export</h4>
+        <p>Delivering purity to 50+ countries worldwide.</p>
+      </div>
+    </div>
   </div>
 </section>
 
-<!-- ================= CONTACT ================= -->
-<section id="contact" class="contact">
-  <h2>Contact Us</h2>
-  <p>Email: info@purenature.com</p>
+<!-- ========== CERTIFICATIONS ========== -->
+<section class="certs reveal-section">
+  <div class="section-head">
+    <p class="section-label">Verified &amp; Trusted</p>
+    <h2>Our Certifications</h2>
+  </div>
+  <div class="certs-row">
+    <div class="cert-card"><div class="cert-icon">🏅</div><h4>ISO 9001:2015</h4><p>International Organization for Standardization</p></div>
+    <div class="cert-card"><div class="cert-icon">✡️</div><h4>KOSHER</h4><p>Kosher India Certified</p></div>
+    <div class="cert-card"><div class="cert-icon">🏭</div><h4>GMP</h4><p>Good Manufacturing Practices</p></div>
+    <div class="cert-card"><div class="cert-icon">☪️</div><h4>HALAL</h4><p>Halal India Certified</p></div>
+    <div class="cert-card"><div class="cert-icon">🔒</div><h4>HACCP</h4><p>Hazard Analysis Critical Control Point</p></div>
+  </div>
 </section>
 
-<!-- ================= FOOTER ================= -->
-<footer>
-  <p>© 2026 PureNature Oils. All rights reserved.</p>
+<!-- ========== TESTIMONIALS ========== -->
+<section class="testimonials reveal-section">
+  <div class="section-head">
+    <p class="section-label">Client Reviews</p>
+    <h2>From the Customers</h2>
+  </div>
+  <div class="testi-track-wrap">
+    <div class="testi-track" id="testiTrack">
+      <div class="testi-card">
+        <div class="stars">★★★★★</div>
+        <p>"Naturoil is amazing. I'm truly happy with their services and the purity of their products."</p>
+        <div class="testi-author"><strong>Mr. Manoj Sharma</strong><span>Business Owner</span></div>
+      </div>
+      <div class="testi-card">
+        <div class="stars">★★★★★</div>
+        <p>"Quality products with no chemicals. Knowledgeable staff, fresh products and a great selection."</p>
+        <div class="testi-author"><strong>Mr. Deepak Bajaj</strong><span>Aromatherapist</span></div>
+      </div>
+      <div class="testi-card">
+        <div class="stars">★★★★★</div>
+        <p>"I love the quality and affordability. They never compromise on quality and testing protocols."</p>
+        <div class="testi-author"><strong>Mr. Alvin</strong><span>Skincare Formulator</span></div>
+      </div>
+      <div class="testi-card">
+        <div class="stars">★★★★★</div>
+        <p>"PureNature supplies the best oils with incredible delivery speed. Highly recommended!"</p>
+        <div class="testi-author"><strong>Jyoti Thapa</strong><span>Wellness Consultant</span></div>
+      </div>
+    </div>
+    <div class="testi-dots" id="testiDots"></div>
+  </div>
+</section>
+
+<!-- ========== FACILITY BANNER ========== -->
+<section class="facility reveal-section">
+  <div class="facility-inner">
+    <div class="facility-text">
+      <p class="section-label">World-Class Infrastructure</p>
+      <h2>Our Facility &amp; <em>Human Resource</em></h2>
+      <p>State-of-the-art distillation units, GMP-compliant labs, and a team of expert botanists and chemists ensure every batch meets international standards.</p>
+      <a href="#contact" class="btn btn-white">Explore Now</a>
+    </div>
+  </div>
+</section>
+
+<!-- ========== CONTACT ========== -->
+<section id="contact" class="contact reveal-section">
+  <div class="contact-inner">
+    <div class="contact-text">
+      <p class="section-label">Get In Touch</p>
+      <h2>Request a <em>Sample or Quote</em></h2>
+      <p>Our team will get back to you within 24 hours.</p>
+      <ul class="contact-info">
+        <li><span>📧</span> info@purenature.com</li>
+        <li><span>📞</span> +91 98765 43210</li>
+        <li><span>📍</span> Kannauj, Uttar Pradesh, India</li>
+      </ul>
+    </div>
+    <form class="contact-form" onsubmit="return false;">
+      <div class="form-row">
+        <div class="form-group"><label>Full Name</label><input type="text" placeholder="Your Name"></div>
+        <div class="form-group"><label>Email</label><input type="email" placeholder="you@email.com"></div>
+      </div>
+      <div class="form-group"><label>Product Interested In</label>
+        <select>
+          <option value="">Select Category</option>
+          <option>Essential Oils</option>
+          <option>Carrier Oils</option>
+          <option>Spice Oils</option>
+          <option>Oleoresins</option>
+        </select>
+      </div>
+      <div class="form-group"><label>Message</label><textarea placeholder="Tell us about your requirements..." rows="4"></textarea></div>
+      <button type="submit" class="btn btn-green full-width">Send Enquiry</button>
+    </form>
+  </div>
+</section>
+
+<!-- ========== FOOTER ========== -->
+<footer class="footer">
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <div class="logo footer-logo">PureNature</div>
+      <p>Harvested from Nature,<br>Crafted for You.</p>
+      <div class="footer-socials">
+        <a href="#">in</a>
+        <a href="#">ig</a>
+        <a href="#">fb</a>
+      </div>
+    </div>
+    <div class="footer-links">
+      <h5>Products</h5>
+      <a href="#">Essential Oils</a>
+      <a href="#">Carrier Oils</a>
+      <a href="#">Spice Oils</a>
+      <a href="#">Oleoresins</a>
+    </div>
+    <div class="footer-links">
+      <h5>Company</h5>
+      <a href="#">About Us</a>
+      <a href="#">Certifications</a>
+      <a href="#">Our Facility</a>
+      <a href="#">Blog</a>
+    </div>
+    <div class="footer-links">
+      <h5>Support</h5>
+      <a href="#">Contact Us</a>
+      <a href="#">Get a Quote</a>
+      <a href="#">Privacy Policy</a>
+      <a href="#">Terms of Use</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2026 PureNature Oils. All rights reserved.</p>
+    <p>ISO 9001:2015 | WHO-GMP | KOSHER | HALAL | HACCP Certified</p>
+  </div>
 </footer>
 
-<!-- JS -->
-<script src="js/main.js"></script>
-
-}
+<script src="main.js"></script>
 </body>
 </html>
